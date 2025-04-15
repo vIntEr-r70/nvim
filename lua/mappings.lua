@@ -40,7 +40,7 @@ end
 keymap("n", "<leader>ff",       function() require('mini.pick').builtin.files() end,        { desc = 'Find File' })
 keymap("n", "<leader>fr",       function() require('mini.pick').builtin.resume() end,       { desc = 'Find File' })
 keymap("n", "<leader>e",        mini_files_open,                                            { desc = 'Find Manualy' })
-keymap("n", "<leader><space>",  function() require('mini.pick').builtin.buffers() end,      { desc = 'Find Buffer' })
+keymap("n", "<leader><space>",  function() MiniExtra.pickers.visit_paths() end,             { desc = 'Find Buffer' })
 keymap("n", "<leader>fg",       function() require('mini.pick').builtin.grep_live() end,    { desc = 'Find String' })
 keymap("n", "<leader>fG",       mini_pick_grep,                                             { desc = 'Find String Cursor' })
 keymap("n", "<leader>fh",       function() require('mini.pick').builtin.help() end,         { desc = 'Find Help' })
