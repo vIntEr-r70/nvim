@@ -25,6 +25,8 @@ vim.o.scrolloff = 10
 vim.o.clipboard = "unnamed,unnamedplus"
 vim.o.updatetime = 1000
 vim.opt.iskeyword:append("-")
+vim.opt.wrap = false
+
 -- vim.o.spelllang = "de,en"
 -- vim.o.spelloptions = "camel"
 -- vim.opt.complete:append("kspell")
@@ -41,19 +43,8 @@ vim.wo.signcolumn = "yes"
 vim.wo.linebreak = true
 
 -- vim.opt.showmode = false
--- vim.opt.wrap = false
 -- vim.opt.virtualedit = "block"
 -- vim.opt.undofile = true
---
--- -- Mouse
--- vim.opt.mouse = "a"
--- vim.opt.mousefocus = true
---
--- -- Line Numbers
--- vim.opt.number = true
--- vim.opt.relativenumber = false 
--- vim.wo.number = true
--- vim.wo.relativenumber = false 
 --
 -- -- Splits
 -- vim.opt.splitbelow = true

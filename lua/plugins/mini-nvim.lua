@@ -1,12 +1,13 @@
 -- Text editing
 require('mini.comment').setup()
+-- require('mini.completion').setup()
 
 -- General workflow
 require('mini.files').setup()
 require('mini.visits').setup()
 require('mini.extra').setup()
 require('mini.jump2d').setup()
-require('mini.hues').setup({ background = '#242424', foreground = '#e4e6ed' })
+require('mini.hues').setup({ background = '#282828', foreground = '#ebdbb2' })
 
 -- Appearance
 require('mini.icons').setup()
@@ -14,6 +15,7 @@ require('mini.statusline').setup()
 require('mini.tabline').setup()
 require('mini.notify').setup()
 require('mini.trailspace').setup()
+
 
 local miniclue = require('mini.clue')
 miniclue.setup({
@@ -75,8 +77,8 @@ miniclue.setup({
 
 require('mini.pick').setup({
     mappings = {
-        move_down  = '<C-j>',
-        move_start = '<C-n>',
-        move_up    = '<C-k>',
+        move_down  = '<M-j>',
+        move_start = '<M-n>',
+        move_up    = '<M-k>',
     }
 })
