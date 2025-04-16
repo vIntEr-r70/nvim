@@ -2,9 +2,6 @@ local keymap = vim.keymap.set
 
 keymap('i', 'jj', '<Esc>')
 
--- keymap('n', '<leader>e',  ':lua MiniFiles.open()<CR>')
--- keymap('n', '<leader>fs', ':lua MiniPick.start({ source = { items = MiniVisits.select_path() } })<CR>')
-
 -- ╔═══════════════════════╗
 -- ║    Local Functions    ║
 -- ╚═══════════════════════╝
@@ -23,7 +20,7 @@ local mini_pick_grep = function()
 end
 
 local mini_extra_buf_lines = function()
-    require('mini.extra').pickers.buf_lines({ scope = 'current' }) 
+    require('mini.extra').pickers.buf_lines({ scope = 'current' })
 end
 
 local mini_extra_diagnostic = function()
